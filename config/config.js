@@ -1,10 +1,10 @@
 require("dotenv").config();
-exports.PORT = process.env.PORT;
-exports.MONGODB_URI = process.env.MONGODB_URI;
-exports.NODE_ENV = process.env.NODE_ENV;
+exports.PORT = 3001;
+exports.MONGODB_URI = "mongodb+srv://roshanrn:jobak12345678@servicemarketplaceclust.5uw12ob.mongodb.net/?retryWrites=true&w=majority&appName=servicemarketplacecluster";
+exports.NODE_ENV = "development";
 
-exports.JWT_SECRET = process.env.JWT_SECRET;
-exports.ORIGIN = process.env.ORIGIN;
+exports.JWT_SECRET = "mysecretkey";
+exports.ORIGIN = "http://10.0.2.2:3000";
 
-exports.FAST2SMS = process.env.FAST2SMS
-exports.ADMIN_PHONE = process.env.ADMIN_PHONE
+exports.FAST2SMS = process.env.FAST2SMS;
+exports.ADMIN_PHONE = +94774469306;

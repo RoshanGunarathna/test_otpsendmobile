@@ -42,7 +42,9 @@ exports.createNewUser = async (req, res, next) =>{
             }
         });
         //genrate otp 
-        const otp = generateOTP(6);
+        // const otp = generateOTP(6);
+        //TODO 
+        const otp = 123456;
         //save otp to the user collction
         user.phoneOtp = otp;
         await fast2sms({
@@ -78,8 +80,10 @@ exports.loginWithPhoneOtp = async (req,res, next) =>{
           },
         });
     
-        // generate otp
-        const otp = generateOTP(6);
+        //genrate otp 
+        // const otp = generateOTP(6);
+        //TODO 
+        const otp = 123456;
         // save otp to user collection
         user.phoneOtp = otp;
         user.isAccountVerified = true;
